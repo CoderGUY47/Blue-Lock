@@ -1,52 +1,443 @@
 [
-  { "playerName": "Lionel Messi", "playerCountry": "Argentina", "playerType": "Forward", "Rating": 93, "battingStyle": "Creative Dribbler", "bowling": "Right Foot", "price": 25000000 },
-  { "playerName": "Cristiano Ronaldo", "playerCountry": "Portugal", "playerType": "Forward", "Rating": 91, "battingStyle": "Power Striker", "bowling": "Right Foot", "price": 20000000 },
-  { "playerName": "Kylian Mbappé", "playerCountry": "France", "playerType": "Forward", "Rating": 94, "battingStyle": "Speed Dribbler", "bowling": "Right Foot", "price": 180000000 },
-  { "playerName": "Erling Haaland", "playerCountry": "Norway", "playerType": "Striker", "Rating": 93, "battingStyle": "Target Man", "bowling": "Right Foot", "price": 150000000 },
-  { "playerName": "Vinicius Jr", "playerCountry": "Brazil", "playerType": "Forward", "Rating": 92, "battingStyle": "Speed Dribbler", "bowling": "Right Foot", "price": 160000000 },
-  { "playerName": "Rodri", "playerCountry": "Spain", "playerType": "Midfielder", "Rating": 92, "battingStyle": "Deep-lying Playmaker", "bowling": "Right Foot", "price": 120000000 },
-  { "playerName": "Lamine Yamal", "playerCountry": "Spain", "playerType": "Forward", "Rating": 89, "battingStyle": "Creative Dribbler", "bowling": "Right Foot", "price": 150000000 },
-  { "playerName": "Jude Bellingham", "playerCountry": "England", "playerType": "Midfielder", "Rating": 91, "battingStyle": "Box-to-Box", "bowling": "Right Foot", "price": 180000000 },
-  { "playerName": "Mohamed Salah", "playerCountry": "Egypt", "playerType": "Forward", "Rating": 90, "battingStyle": "Speed Dribbler", "bowling": "Left Foot", "price": 70000000 },
-  { "playerName": "Kevin De Bruyne", "playerCountry": "Belgium", "playerType": "Midfielder", "Rating": 91, "battingStyle": "Advanced Playmaker", "bowling": "Right Foot", "price": 60000000 },
-  { "playerName": "Harry Kane", "playerCountry": "England", "playerType": "Striker", "Rating": 90, "battingStyle": "Target Man", "bowling": "Right Foot", "price": 100000000 },
-  { "playerName": "Bukayo Saka", "playerCountry": "England", "playerType": "Forward", "Rating": 89, "battingStyle": "Creative Dribbler", "bowling": "Left Foot", "price": 150000000 },
-  { "playerName": "Pedri", "playerCountry": "Spain", "playerType": "Midfielder", "Rating": 90, "battingStyle": "Advanced Playmaker", "bowling": "Right Foot", "price": 150000000 },
-  { "playerName": "Phil Foden", "playerCountry": "England", "playerType": "Midfielder", "Rating": 90, "battingStyle": "Creative Dribbler", "bowling": "Left Foot", "price": 130000000 },
-  { "playerName": "Ruben Dias", "playerCountry": "Portugal", "playerType": "Defender", "Rating": 89, "battingStyle": "Ball-Playing Defender", "bowling": "Right Foot", "price": 80000000 },
-  { "playerName": "Virgil van Dijk", "playerCountry": "Netherlands", "playerType": "Defender", "Rating": 89, "battingStyle": "Sweeper", "bowling": "Right Foot", "price": 60000000 },
-  { "playerName": "Thibaut Courtois", "playerCountry": "Belgium", "playerType": "Goalkeeper", "Rating": 91, "battingStyle": "Sweeper Keeper", "bowling": "Right Foot", "price": 60000000 },
-  { "playerName": "Alisson Becker", "playerCountry": "Brazil", "playerType": "Goalkeeper", "Rating": 90, "battingStyle": "Traditional Keeper", "bowling": "Right Foot", "price": 50000000 },
-  { "playerName": "Gianluigi Donnarumma", "playerCountry": "Italy", "playerType": "Goalkeeper", "Rating": 89, "battingStyle": "Traditional Keeper", "bowling": "Right Foot", "price": 60000000 },
-  { "playerName": "Ferran Torres", "playerCountry": "Spain", "playerType": "Forward", "Rating": 83, "battingStyle": "Speed Dribbler", "bowling": "Right Foot", "price": 55000000 },
-  { "playerName": "Raphinha", "playerCountry": "Brazil", "playerType": "Forward", "Rating": 86, "battingStyle": "Creative Dribbler", "bowling": "Left Foot", "price": 70000000 },
-  { "playerName": "Marcus Rashford", "playerCountry": "England", "playerType": "Forward", "Rating": 85, "battingStyle": "Speed Dribbler", "bowling": "Right Foot", "price": 60000000 },
-  { "playerName": "Antoine Griezmann", "playerCountry": "France", "playerType": "Forward", "Rating": 86, "battingStyle": "Box-to-Box", "bowling": "Left Foot", "price": 40000000 },
-  { "playerName": "Bruno Fernandes", "playerCountry": "Portugal", "playerType": "Midfielder", "Rating": 88, "battingStyle": "Advanced Playmaker", "bowling": "Right Foot", "price": 80000000 },
-  { "playerName": "Lautaro Martinez", "playerCountry": "Argentina", "playerType": "Striker", "Rating": 89, "battingStyle": "Target Man", "bowling": "Right Foot", "price": 110000000 },
-  { "playerName": "Nicolo Barella", "playerCountry": "Italy", "playerType": "Midfielder", "Rating": 88, "battingStyle": "Box-to-Box", "bowling": "Right Foot", "price": 90000000 },
-  { "playerName": "Federico Valverde", "playerCountry": "Uruguay", "playerType": "Midfielder", "Rating": 88, "battingStyle": "Box-to-Box", "bowling": "Right Foot", "price": 120000000 },
-  { "playerName": "Bernardo Silva", "playerCountry": "Portugal", "playerType": "Midfielder", "Rating": 88, "battingStyle": "Advanced Playmaker", "bowling": "Right Foot", "price": 80000000 },
-  { "playerName": "Leroy Sane", "playerCountry": "Germany", "playerType": "Forward", "Rating": 86, "battingStyle": "Speed Dribbler", "bowling": "Right Foot", "price": 50000000 },
-  { "playerName": "Alexia Putellas", "playerCountry": "Spain", "playerType": "Midfielder", "Rating": 90, "battingStyle": "Advanced Playmaker", "bowling": "Left Foot", "price": 5000000 },
-  { "playerName": "Ousmane Dembele", "playerCountry": "France", "playerType": "Forward", "Rating": 87, "battingStyle": "Creative Dribbler", "bowling": "Left Foot", "price": 80000000 },
-  { "playerName": "Florian Wirtz", "playerCountry": "Germany", "playerType": "Midfielder", "Rating": 90, "battingStyle": "Creative Dribbler", "bowling": "Right Foot", "price": 150000000 },
-  { "playerName": "Jonathan David", "playerCountry": "Canada", "playerType": "Striker", "Rating": 86, "battingStyle": "Target Man", "bowling": "Right Foot", "price": 60000000 },
-  { "playerName": "Victor Osimhen", "playerCountry": "Nigeria", "playerType": "Striker", "Rating": 88, "battingStyle": "Target Man", "bowling": "Right Foot", "price": 100000000 },
-  { "playerName": "Khvicha Kvaratskhelia", "playerCountry": "Georgia", "playerType": "Forward", "Rating": 88, "battingStyle": "Creative Dribbler", "bowling": "Right Foot", "price": 80000000 },
-  { "playerName": "Gavi", "playerCountry": "Spain", "playerType": "Midfielder", "Rating": 87, "battingStyle": "Deep-lying Playmaker", "bowling": "Right Foot", "price": 100000000 },
-  { "playerName": "Achraf Hakimi", "playerCountry": "Morocco", "playerType": "Defender", "Rating": 87, "battingStyle": "Attacking Full-back", "bowling": "Right Foot", "price": 70000000 },
-  { "playerName": "Alphonso Davies", "playerCountry": "Canada", "playerType": "Defender", "Rating": 86, "battingStyle": "Attacking Full-back", "bowling": "Left Foot", "price": 70000000 },
-  { "playerName": "Declan Rice", "playerCountry": "England", "playerType": "Midfielder", "Rating": 87, "battingStyle": "Deep-lying Playmaker", "bowling": "Right Foot", "price": 100000000 },
-  { "playerName": "William Saliba", "playerCountry": "France", "playerType": "Defender", "Rating": 87, "battingStyle": "Ball-Playing Defender", "bowling": "Right Foot", "price": 90000000 },
-  { "playerName": "Eder Militao", "playerCountry": "Brazil", "playerType": "Defender", "Rating": 86, "battingStyle": "Sweeper", "bowling": "Right Foot", "price": 70000000 },
-  { "playerName": "Mike Maignan", "playerCountry": "France", "playerType": "Goalkeeper", "Rating": 88, "battingStyle": "Sweeper Keeper", "bowling": "Right Foot", "price": 55000000 },
-  { "playerName": "Dusan Vlahovic", "playerCountry": "Serbia", "playerType": "Striker", "Rating": 86, "battingStyle": "Target Man", "bowling": "Left Foot", "price": 80000000 },
-  { "playerName": "Christopher Nkunku", "playerCountry": "France", "playerType": "Forward", "Rating": 86, "battingStyle": "Creative Dribbler", "bowling": "Right Foot", "price": 60000000 },
-  { "playerName": "Jamal Musiala", "playerCountry": "Germany", "playerType": "Midfielder", "Rating": 89, "battingStyle": "Creative Dribbler", "bowling": "Right Foot", "price": 150000000 },
-  { "playerName": "Mason Mount", "playerCountry": "England", "playerType": "Midfielder", "Rating": 83, "battingStyle": "Box-to-Box", "bowling": "Right Foot", "price": 40000000 },
-  { "playerName": "Sadio Mane", "playerCountry": "Senegal", "playerType": "Forward", "Rating": 84, "battingStyle": "Speed Dribbler", "bowling": "Right Foot", "price": 25000000 },
-  { "playerName": "Romelu Lukaku", "playerCountry": "Belgium", "playerType": "Striker", "Rating": 85, "battingStyle": "Target Man", "bowling": "Right Foot", "price": 30000000 },
-  { "playerName": "Paulo Dybala", "playerCountry": "Argentina", "playerType": "Forward", "Rating": 86, "battingStyle": "Creative Dribbler", "bowling": "Left Foot", "price": 35000000 },
-  { "playerName": "Kingsley Coman", "playerCountry": "France", "playerType": "Forward", "Rating": 85, "battingStyle": "Speed Dribbler", "bowling": "Right Foot", "price": 45000000 }
+  {
+    "playerName": "Yoichi Isagi",
+    "role": "Forward",
+    "rating": 93,
+    "specialty": "Spatial Awareness",
+    "strongFoot": "Right Foot",
+    "price": 25000000,
+    "image": "/assets/images/players/yoichi_isagi.png"
+  },
+  {
+    "playerName": "Meguru Bachira",
+    "role": "Forward",
+    "rating": 90,
+    "specialty": "Monster Dribbling",
+    "strongFoot": "Right Foot",
+    "price": 18000000,
+    "image": "/assets/images/players/meguru_bachira.png"
+  },
+  {
+    "playerName": "Rin Itoshi",
+    "role": "Forward",
+    "rating": 96,
+    "specialty": "Puppet Control Soccer",
+    "strongFoot": "Right Foot",
+    "price": 45000000,
+    "image": "/assets/images/players/rin_itoshi.png"
+  },
+  {
+    "playerName": "Seishiro Nagi",
+    "role": "Forward",
+    "rating": 94,
+    "specialty": "Perfect Trapping",
+    "strongFoot": "Right Foot",
+    "price": 28000000,
+    "image": "/assets/images/players/seishiro_nagi.png"
+  },
+  {
+    "playerName": "Hyoma Chigiri",
+    "role": "Forward",
+    "rating": 92,
+    "specialty": "Lightning Speed",
+    "strongFoot": "Right Foot",
+    "price": 22000000,
+    "image": "/assets/images/players/hyoma_chigiri.png"
+  },
+  {
+    "playerName": "Ryusei Shidou",
+    "role": "Forward",
+    "rating": 95,
+    "specialty": "Dragon Drive",
+    "strongFoot": "Right Foot",
+    "price": 35000000,
+    "image": "/assets/images/players/ryusei_shidou.png"
+  },
+  {
+    "playerName": "Shouei Barou",
+    "role": "Forward",
+    "rating": 94,
+    "specialty": "The Villain / Middle Shot",
+    "strongFoot": "Right Foot",
+    "price": 32000000,
+    "image": "/assets/images/players/barou.png"
+  },
+  {
+    "playerName": "Reo Mikage",
+    "role": "Midfielder",
+    "rating": 92,
+    "specialty": "Ultra Versatile Copy",
+    "strongFoot": "Right Foot",
+    "price": 26000000,
+    "image": "/assets/images/players/reo_mikage.png"
+  },
+  {
+    "playerName": "Sae Itoshi",
+    "role": "Midfielder",
+    "rating": 98,
+    "specialty": "New Generation World 11",
+    "strongFoot": "Right Foot",
+    "price": 75000000,
+    "image": "/assets/images/players/sae_itoshi.png"
+  },
+  {
+    "playerName": "Rensuke Kunigami",
+    "role": "Forward",
+    "rating": 92,
+    "specialty": "Hero Projectile Shot",
+    "strongFoot": "Left Foot",
+    "price": 24000000,
+    "image": "/assets/images/players/rensuke_kunigami.png"
+  },
+  {
+    "playerName": "Tabito Karasu",
+    "role": "Midfielder",
+    "rating": 90,
+    "specialty": "Weak Point Analysis",
+    "strongFoot": "Right Foot",
+    "price": 16000000,
+    "image": "/assets/images/players/tabito_karasu.png"
+  },
+  {
+    "playerName": "Eita Otoya",
+    "role": "Forward",
+    "rating": 89,
+    "specialty": "Ninja Stealth",
+    "strongFoot": "Right Foot",
+    "price": 15000000,
+    "image": "/assets/images/players/eita_otoya.png"
+  },
+  {
+    "playerName": "Yo Hiori",
+    "role": "Midfielder",
+    "rating": 90,
+    "specialty": "Reflexive Passing",
+    "strongFoot": "Right Foot",
+    "price": 16000000,
+    "image": "/assets/images/players/yo_hiori.png"
+  },
+  {
+    "playerName": "Oliver Aiku",
+    "role": "Defender",
+    "rating": 94,
+    "specialty": "Defensive Commander",
+    "strongFoot": "Right Foot",
+    "price": 40000000,
+    "image": "/assets/images/players/oliver_aiku.png"
+  },
+  {
+    "playerName": "Jyubei Aryu",
+    "role": "Defender",
+    "rating": 90,
+    "specialty": "Glam (Long-range header)",
+    "strongFoot": "Right Foot",
+    "price": 18000000,
+    "image": "/assets/images/players/jyubei_aryu.png"
+  },
+  {
+    "playerName": "Gin Gagamaru",
+    "role": "Goalkeeper",
+    "rating": 89,
+    "specialty": "Acrobatic Reflexes",
+    "strongFoot": "Right Foot",
+    "price": 12000000,
+    "image": "/assets/images/players/gin_gagamaru.png"
+  },
+  {
+    "playerName": "Jingo Raichi",
+    "role": "Midfielder",
+    "rating": 86,
+    "specialty": "Sexy Football (Stamina)",
+    "strongFoot": "Right Foot",
+    "price": 10000000,
+    "image": "/assets/images/players/jingo_raichi.png"
+  },
+  {
+    "playerName": "Kenyu Yukimiya",
+    "role": "Forward",
+    "rating": 90,
+    "specialty": "Gyro Shot / 1v1 Master",
+    "strongFoot": "Right Foot",
+    "price": 17000000,
+    "image": "/assets/images/players/kenyu_yukimiya.png"
+  },
+  {
+    "playerName": "Nijiro Nanase",
+    "role": "Forward",
+    "rating": 85,
+    "specialty": "Team Link Play",
+    "strongFoot": "Right Foot",
+    "price": 8000000,
+    "image": "/assets/images/players/nanase.jpg"
+  },
+  {
+    "playerName": "Ikki Niko",
+    "role": "Defender",
+    "rating": 88,
+    "specialty": "Watchtower Vision",
+    "strongFoot": "Right Foot",
+    "price": 14000000,
+    "image": "/assets/images/players/ikki_niko.png"
+  },
+  {
+    "playerName": "Junichi Wanima",
+    "role": "Forward",
+    "rating": 84,
+    "specialty": "Wanima Twin Combo",
+    "strongFoot": "Right Foot",
+    "price": 6000000,
+    "image": "/assets/images/players/junichi_wanima.png"
+  },
+  {
+    "playerName": "Keisuke Wanima",
+    "role": "Forward",
+    "rating": 84,
+    "specialty": "Wanima Twin Combo",
+    "strongFoot": "Right Foot",
+    "price": 6000000,
+    "image": "/assets/images/players/keisuke_wanima.png"
+  },
+  {
+    "playerName": "Gurimu Igarashi",
+    "role": "Forward",
+    "rating": 80,
+    "specialty": "Malicia Foul-drawing",
+    "strongFoot": "Right Foot",
+    "price": 5000000,
+    "image": "/assets/images/players/gurimu_igarashi.png"
+  },
+  {
+    "playerName": "Zantetsu Tsurugi",
+    "role": "Forward",
+    "rating": 88,
+    "specialty": "Explosive Left Foot Shot",
+    "strongFoot": "Left Foot",
+    "price": 14000000,
+    "image": "/assets/images/players/zantetsu_tsurugi.png"
+  },
+  {
+    "playerName": "Aoshi Tokimitsu",
+    "role": "Forward",
+    "rating": 89,
+    "specialty": "Muscle Stamina",
+    "strongFoot": "Right Foot",
+    "price": 16000000,
+    "image": "/assets/images/players/aoshi_tokimitsu.png"
+  },
+  {
+    "playerName": "Shuto Sendou",
+    "role": "Forward",
+    "rating": 87,
+    "specialty": "U-20 Top Scorer",
+    "strongFoot": "Right Foot",
+    "price": 15000000,
+    "image": "/assets/images/players/shuto_sendou.png"
+  },
+  {
+    "playerName": "Asahi Naruhaya",
+    "role": "Forward",
+    "rating": 82,
+    "specialty": "Off-the-ball Movement",
+    "strongFoot": "Right Foot",
+    "price": 5000000,
+    "image": "/assets/images/players/asahi_naruhaya.png"
+  },
+  {
+    "playerName": "Wataru Kuon",
+    "role": "Forward",
+    "rating": 85,
+    "specialty": "Tactical Jumping",
+    "strongFoot": "Right Foot",
+    "price": 8000000,
+    "image": "/assets/images/players/wataru_kuon.png"
+  },
+  {
+    "playerName": "Yudai Imamura",
+    "role": "Forward",
+    "rating": 83,
+    "specialty": "Flirtatious Reflex",
+    "strongFoot": "Right Foot",
+    "price": 6000000,
+    "image": "/assets/images/players/yudai_imamura.png"
+  },
+  {
+    "playerName": "Okuhito Iemon",
+    "role": "Goalkeeper",
+    "rating": 85,
+    "specialty": "All-Round Sub",
+    "strongFoot": "Right Foot",
+    "price": 7000000,
+    "image": "/assets/images/players/okuhito_iemon.png"
+  },
+  {
+    "playerName": "Ryosuke Kira",
+    "role": "Forward",
+    "rating": 88,
+    "specialty": "Jewel of Japan",
+    "strongFoot": "Right Foot",
+    "price": 12000000,
+    "image": "/assets/images/players/ryosuke_kira.png"
+  },
+  {
+    "playerName": "Jinpachi Ego",
+    "role": "Coach",
+    "rating": 99,
+    "specialty": "Egoist Architect",
+    "strongFoot": "Brain",
+    "price": 0,
+    "image": "/assets/images/players/jinpachi_ego.png"
+  },
+  {
+    "playerName": "Anri Teieri",
+    "role": "Staff",
+    "rating": 95,
+    "specialty": "Project Director",
+    "strongFoot": "Right Hand",
+    "price": 0,
+    "image": "/assets/images/players/teieri.jpg"
+  },
+  {
+    "playerName": "Shoei Barou",
+    "role": "Forward",
+    "rating": 85,
+    "specialty": "All-Rounder",
+    "strongFoot": "Right Foot",
+    "price": 10000000,
+    "image": "/assets/images/players/shoei_barou.png"
+  },
+  {
+    "playerName": "Hibiki Okawa",
+    "role": "Forward",
+    "rating": 85,
+    "specialty": "All-Rounder",
+    "strongFoot": "Right Foot",
+    "price": 10000000,
+    "image": "/assets/images/players/hibiki_okawa.png"
+  },
+  {
+    "playerName": "Leonardo Luna",
+    "role": "Forward",
+    "rating": 95,
+    "specialty": "World Five Specialist",
+    "strongFoot": "Right Foot",
+    "price": 50000000,
+    "image": "/assets/images/players/leonardo_luna.png"
+  },
+  {
+    "playerName": "Adam Blake",
+    "role": "Forward",
+    "rating": 95,
+    "specialty": "World Five Specialist",
+    "strongFoot": "Right Foot",
+    "price": 50000000,
+    "image": "/assets/images/players/adam_blake.png"
+  },
+  {
+    "playerName": "Dada Silva",
+    "role": "Forward",
+    "rating": 95,
+    "specialty": "World Five Specialist",
+    "strongFoot": "Right Foot",
+    "price": 50000000,
+    "image": "/assets/images/players/dada_silva.png"
+  },
+  {
+    "playerName": "Pablo Cavasoz",
+    "role": "Forward",
+    "rating": 95,
+    "specialty": "World Five Specialist",
+    "strongFoot": "Right Foot",
+    "price": 50000000,
+    "image": "/assets/images/players/pablo_cavasoz.png"
+  },
+  {
+    "playerName": "Jin Kiyora",
+    "role": "Midfielder",
+    "rating": 87,
+    "specialty": "Point Spread",
+    "strongFoot": "Right Foot",
+    "price": 12000000,
+    "image": "/assets/images/players/jin_kiyora.png"
+  },
+  {
+    "playerName": "Ranze Kurona",
+    "role": "Defender",
+    "rating": 88,
+    "specialty": "Planet Orbit",
+    "strongFoot": "Right Foot",
+    "price": 15000000,
+    "image": "/assets/images/players/ranze_kurona.png"
+  },
+  {
+    "playerName": "Michael Kaiser",
+    "role": "Forward",
+    "rating": 97,
+    "specialty": "Kaiser Impact",
+    "strongFoot": "Right Foot",
+    "price": 65000000,
+    "image": "/assets/images/players/michael_kaiser.png"
+  },
+  {
+    "playerName": "Noel Noa",
+    "role": "Forward",
+    "rating": 99,
+    "specialty": "World's Best Striker",
+    "strongFoot": "Right Foot",
+    "price": 100000000,
+    "image": "/assets/images/players/noel_noa.png"
+  },
+  {
+    "playerName": "Julian Loki",
+    "role": "Forward",
+    "rating": 98,
+    "specialty": "Godspeed",
+    "strongFoot": "Right Foot",
+    "price": 80000000,
+    "image": "/assets/images/players/julian_loki.png"
+  },
+  {
+    "playerName": "Marc Snuffy",
+    "role": "Forward",
+    "rating": 98,
+    "specialty": "Master Strategist",
+    "strongFoot": "Right Foot",
+    "price": 75000000,
+    "image": "/assets/images/players/marc_snuffy.png"
+  },
+  {
+    "playerName": "Lavinho",
+    "role": "Forward",
+    "rating": 97,
+    "specialty": "Ginga Dancer",
+    "strongFoot": "Right Foot",
+    "price": 70000000,
+    "image": "/assets/images/players/lavinho.png"
+  },
+  {
+    "playerName": "Chris Prince",
+    "role": "Forward",
+    "rating": 98,
+    "specialty": "Perfect Body",
+    "strongFoot": "Right Foot",
+    "price": 75000000,
+    "image": "/assets/images/players/chris_prince.png"
+  },
+  {
+    "playerName": "Don Lorenzo",
+    "role": "Defender",
+    "rating": 96,
+    "specialty": "Zombie Dribbling",
+    "strongFoot": "Right Foot",
+    "price": 40000000,
+    "image": "/assets/images/players/don_lorenzo.png"
+  },
+  {
+    "playerName": "Charles Chevalier",
+    "role": "Midfielder",
+    "rating": 94,
+    "specialty": "Contrarian Passing",
+    "strongFoot": "Right Foot",
+    "price": 30000000,
+    "image": "/assets/images/players/charles_chevalier.png"
+  }
 ]

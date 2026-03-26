@@ -1,10 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-dm: "DM Sans", sans-serif;
+}
 @plugin "daisyui";
 @plugin "daisyui/theme" {
   name: "dark";
   default: true;
   prefersdark: true;
+}
+
+@layer utilities {
+  .perspective-1200 { 
+    perspective: 1200px; 
+  }
+  .preserve-3d { 
+    transform-style: preserve-3d; 
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .rotate-y-180 { 
+    transform: rotateY(180deg); 
+  }
 }
 
 body {
