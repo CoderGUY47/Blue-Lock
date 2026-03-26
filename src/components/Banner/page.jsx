@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="relative w-full h-full overflow-hidden rounded-3xl border border-white/10 shadow-2xl flex flex-col items-center justify-center text-center p-8 group">
         <div className="absolute inset-0 -z-10 overflow-hidden">
             <img className='w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 brightness-50' src="/Blue-banner.jpg" alt="Banner Background"/>
-            {/* for the filter */}
+            {/*/////======== image filter ========\\\\\\\*/}
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
         </div>
 
@@ -18,7 +18,7 @@ const Banner = () => {
            
            <h1 className="text-white text-4xl md:text-5xl font-bold mb-2 drop-shadow-2xl tracking-wide leading-tighter">
              Assemble Your Ultimate <br />
-             <span className="font-black text-5xl md:text-6xl bg-linear-to-tl from-sky-400 to-blue-600 bg-clip-text text-transparent">Blue Lock Dream 11</span>
+             <span className="font-black text-5xl md:text-6xl bg-linear-to-tr from-blue-600 to-sky-400 bg-clip-text text-transparent">Blue Lock Dream 11</span>
            </h1>
 
            <p className="text-white/60 text-base md:text-lg font-semibold pt-2 mb-3 tracking-widest uppercase max-w-3xl drop-shadow-md">
@@ -26,13 +26,14 @@ const Banner = () => {
            </p>
 
            <div className="relative group/btn">
-              <button className="relative px-12 py-5 bg-linear-to-tr from-blue-600 to-sky-500 hover:from-blue-500 hover:to-blue-600 text-white text-2xl font-bold rounded-xl transition-all duration-700 border-none">
+              <button className="relative px-12 py-5 bg-linear-to-tl from-blue-700 to-indigo-600
+               hover:from-indigo-800 hover:to-blue-600 text-white text-2xl font-bold rounded-xl transition-all duration-700 border-none">
                 Start Your Selection
               </button>
            </div>
         </div>
         
-        {/* for the blurry effect */}
+        {/*/////======== blurry bottom effect ========\\\\\\\*/}
         <div className="absolute inset-0 bg-white/5 backdrop-blur-xs pointer-events-none -z-10"></div>
       </div>
     </div>

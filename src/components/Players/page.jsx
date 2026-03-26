@@ -1,7 +1,8 @@
 import React, { use, useState } from 'react'
 import AvailablePlayers from '../AvailablePlayers/AvailablePlayers'
+import SelectedPlayers from '../SelectedPlayers/SelectedPlayers'
 
-const page = ({playerPromise}) => {
+const page = ({playerPromise, setCoin, coin}) => {
   const playersData = use(playerPromise)
   console.log(playersData)
   const [selectedType, setSelectedType] = useState("available")
@@ -10,8 +11,12 @@ const page = ({playerPromise}) => {
 
   return (
     <>
-    <div className='w-[88%] mx-auto flex justify-between mt-20'>
-        <h2 className='text-2xl font-bold text-center mb-6 text-white'>Available Players ({playersData.length})</h2>
+    <div className='w-[88%] mx-auto flex items-center justify-between mt-20 -mb-10 pb-4'>
+      <div className="">
+        {selectedType === "available" ? 
+        <h2 className='text-2xl md:text-3xl font-bold text-white tracking-wide'>Available Players ({playersData.length})</h2> : 
+        <h2 className='text-2xl md:text-3xl font-bold text-white tracking-wide'>Selected Players (0/{playersData.length})</h2>}
+      </div>
         <div className="flex items-center gap-4">
           <button 
             onClick={() => setSelectedType("available")}
@@ -37,7 +42,9 @@ const page = ({playerPromise}) => {
         </div>
     </div>
     <div className="container mx-auto"> 
-      <AvailablePlayers playersData={playersData}/>
+      {selectedType === "available" ? 
+      <AvailablePlayers playersData={playersData} setCoin={setCoin} coin={coin}/> : 
+      <SelectedPlayers/>}
     </div>
     </>
   )
