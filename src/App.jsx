@@ -4,6 +4,8 @@ import Banner from './components/Banner/page'
 import Players from './components/Players/page'
 import AnalysisChartsPage from './components/AnalysisCharts/AnalysisChartsPage'
 import { Suspense, useState } from 'react'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const fetchPlayerData = async () => {
   await new Promise(resolve => setTimeout(resolve, 1000));
@@ -33,6 +35,7 @@ function App() {
           <AnalysisChartsPage playerPromise={playerPromise} />
         )}
       </Suspense>
+      <ToastContainer position="bottom-right" theme="dark" newestOnTop />
     </>
   )
 }

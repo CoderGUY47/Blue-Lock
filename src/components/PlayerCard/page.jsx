@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from 'react-toastify';
 
 const fourCardsLevel = (rating) => {
   if (rating >= 90) {
@@ -92,6 +93,9 @@ const PlayerCard = ({ player = defaultPlayer, setCoin, coin, selectedPlayers, se
     if(selectedPlayers.some(p => p.playerName === player.playerName)) return;
     setSelectedPlayers([...selectedPlayers, player]);
     setIsSelected(true);
+    toast.success(`Recruited ${player.playerName} to the Roster!`, {
+      icon: "⚽",
+    });
   };
 
   const handleRemove = (e) => {
@@ -100,6 +104,9 @@ const PlayerCard = ({ player = defaultPlayer, setCoin, coin, selectedPlayers, se
     //when remove the card from remove section it will back the money
     setCoin(coin + player.price);
     setSelectedPlayers(selectedPlayers.filter(selectedPlayer => selectedPlayer.playerName !== player.playerName));
+    toast.warn(`${player.playerName} has been removed from your Roster.`, {
+      icon: "🗑️",
+    });
   }
 
   const tier = fourCardsLevel(player.rating);
