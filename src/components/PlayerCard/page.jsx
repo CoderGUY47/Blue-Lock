@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const getTierConfig = (rating) => {
+const fourCardsLevel = (rating) => {
   if (rating >= 90) {
     return {
       name: "PLATINUM",
@@ -11,7 +11,7 @@ const getTierConfig = (rating) => {
       bgRing:
         "bg-gradient-to-br from-purple-500 to-purple-700 border-2 border-white/10",
       shadow: "shadow-lg shadow-purple-500/40",
-      cardBg: "to-purple-950/80",
+      cardBg: "to-purple-950/30",
     };
   }
   if (rating >= 80) {
@@ -24,7 +24,7 @@ const getTierConfig = (rating) => {
       bgRing:
         "bg-gradient-to-br from-orange-700 via-yellow-500 to-yellow-700 border-2 border-white/10",
       shadow: "shadow-lg shadow-yellow-500/30",
-      cardBg: "to-yellow-950/80",
+      cardBg: "to-yellow-950/30",
     };
   }
   if (rating >= 70) {
@@ -36,7 +36,7 @@ const getTierConfig = (rating) => {
         "bg-gradient-to-r from-transparent via-stone-300 to-transparent",
       bgRing: "bg-gradient-to-br from-stone-300 via-transparent to-stone-300",
       shadow: "shadow-lg shadow-stone-300/20",
-      cardBg: "to-stone-900/80",
+      cardBg: "to-stone-900/30",
     };
   }
   return {
@@ -47,7 +47,7 @@ const getTierConfig = (rating) => {
       "bg-gradient-to-r from-transparent via-orange-500 to-transparent",
     bgRing: "bg-gradient-to-br from-orange-500 via-transparent to-orange-500",
     shadow: "shadow-lg shadow-orange-500/15",
-    cardBg: "to-orange-950/80",
+    cardBg: "to-orange-950/30",
   };
 };
 
@@ -61,30 +61,48 @@ const defaultPlayer = {
   image: "/assets/images/players/yoichi_isagi.png",
 };
 
-const PlayerCard = ({ player = defaultPlayer, setCoin, coin }) => {
+const PlayerCard = ({ player = defaultPlayer, setCoin, coin, selectedPlayers, setSelectedPlayers, view }) => {
   const [flipped, setFlipped] = useState(false);
   const [imgError, setImgError] = useState(false);
   const [isSelected, setIsSelected] = useState(false);
+  const [isRemoved, setIsRemoved] = useState(false);
   const handleChoosePlayer = (e) => {
     e.stopPropagation();
     // /////======== click handler logic ========\\\\\\\
     if (coin >= player.price) {
       setCoin(coin - player.price);
       setIsSelected(true);
+      handleSelectPlayer(e);
       
       if (isSelected === false) {
         setTimeout(() => setFlipped(false), 400);
       }
-    } else {
-      document.getElementById(`modal_${player.playerName.replace(/\s+/g, '_')}`).showModal();
+    } 
+    else {
+      document.getElementById(`modal_${player.playerName.replaceAll(" ", "_")}`).showModal();
       if (isSelected === false) {
         setTimeout(() => setFlipped(false), 400);
       }
     }
+  };  
+
+  const handleSelectPlayer = (e) => {
+    e.stopPropagation();
+    //check the duplicates card, then return and .some is used for checking yes/no, it's not gather index but check the data each one card, it's fast because it stops searching as soon as it finds a single match
+    if(selectedPlayers.some(p => p.playerName === player.playerName)) return;
+    setSelectedPlayers([...selectedPlayers, player]);
+    setIsSelected(true);
   };
 
+  const handleRemove = (e) => {
+    e.stopPropagation();
+    setIsRemoved(true);
+    //when remove the card from remove section it will back the money
+    setCoin(coin + player.price);
+    setSelectedPlayers(selectedPlayers.filter(selectedPlayer => selectedPlayer.playerName !== player.playerName));
+  }
 
-  const tier = getTierConfig(player.rating);
+  const tier = fourCardsLevel(player.rating);
   const initials = player.playerName.split(" ").map((n) => n[0]).join("");
   const formattedPrice = player.price === 0 ? "Non-Transfer" : `$${(player.price / 1000000).toFixed(1)}M`;
 
@@ -92,13 +110,13 @@ const PlayerCard = ({ player = defaultPlayer, setCoin, coin }) => {
     <div className="flex justify-center items-center group">
       <div className="relative w-[350px] h-[550px] cursor-pointer perspective-1200" onClick={() => setFlipped(!flipped)}>
         <div className={`relative w-full h-full transition-transform duration-700 preserve-3d ${flipped ? "rotate-y-180" : ""}`}>
-          <div className={`absolute inset-0 w-full h-full rounded-[32px] overflow-hidden flex flex-col border border-white/10 backface-hidden bg-gradient-to-b from-slate-900 ${tier.cardBg} shadow-2xl ${tier.shadow}`}>
+          <div className={`absolute inset-0 w-full h-full rounded-[32px] overflow-hidden flex flex-col border border-white/10 backface-hidden bg-linear-to-b from-slate-900/40 ${tier.cardBg} backdrop-blur-3xl shadow-2xl ${tier.shadow}`}>
             <div className={`absolute top-0 left-0 right-0 h-[4px] ${tier.bgGradientLine}`}/>
             {/*/////======== top section ========\\\\\\\*/}
             <div className="relative pt-6 px-8 flex flex-col items-center text-center">
               <div className="w-full flex justify-between items-center mb-6">
                 <div className="flex items-center gap-2">
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[11px] text-white tracking-[0.5px] bg-gradient-to-br ${tier.bgGradientTop} font-bebas`}>
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[11px] text-white tracking-[0.5px] bg-linear-to-br ${tier.bgGradientTop} font-bebas`}>
                     <img src="/Blue-Lock-logo.png " alt="" className="object-cover bg-white w-14 h-8 rounded-full"/>
                   </div>
                   <span className="text-xs tracking-[3px] text-white/70 font-bold uppercase">
@@ -106,7 +124,7 @@ const PlayerCard = ({ player = defaultPlayer, setCoin, coin }) => {
                   </span>
                 </div>
 
-                <div className={`rounded-[20px] py-[6px] px-[14px] flex items-baseline gap-[3px] bg-gradient-to-br ${tier.bgGradientTop}`}>
+                <div className={`rounded-[20px] py-[6px] px-[14px] flex items-baseline gap-[3px] bg-linear-to-br ${tier.bgGradientTop}`}>
                   <span className="font-bebas text-white text-2xl leading-none">{player.rating}</span>
                   <span className="text-xs font-semibold text-white tracking-tight uppercase">Power</span>
                 </div>
@@ -174,7 +192,7 @@ const PlayerCard = ({ player = defaultPlayer, setCoin, coin }) => {
           </div>
 
           {/*/////======== back part ========\\\\\\\*/}
-          <div className={`absolute inset-0 w-full h-full rounded-[32px] overflow-hidden flex flex-col border border-white/10 backface-hidden rotate-y-180 bg-gradient-to-b from-slate-900 ${tier.cardBg} shadow-2xl ${tier.shadow}`}>
+          <div className={`absolute inset-0 w-full h-full rounded-[32px] overflow-hidden flex flex-col border border-white/10 backface-hidden rotate-y-180 bg-linear-to-b from-slate-900/40 ${tier.cardBg} backdrop-blur-3xl shadow-2xl ${tier.shadow}`}>
             <div className="font-outfit p-10 h-full flex flex-col">
               <div className="mb-[30px]">
                 <div className={`text-[10px] font-bold tracking-[4px] mb-2 ${tier.textColor}`}>{tier.name} · PLAYER DETAILS</div>
@@ -198,16 +216,31 @@ const PlayerCard = ({ player = defaultPlayer, setCoin, coin }) => {
                   <span className="text-base text-white font-bold">{formattedPrice}</span>
                 </div>
               </div>
-              <button className={`btn mt-auto w-full p-[18px] rounded-[16px] text-white text-[14px] tracking-[4px] uppercase border-none cursor-pointer bg-linear-to-br ${tier.bgGradientTop} font-outfit ${isSelected ? 'opacity-70' : ''}`} 
-                  onClick={(e) => {
-                    handleChoosePlayer(e)
-                }}
-                disabled={isSelected}
-              >
-                {isSelected ? "Selected" : "Choose Player"}
-              </button>
+              
+              {/* give condition to check if the player is already selected or available with view props*/}
+              {view === "available" && (
+                <button className={`btn mt-auto w-full p-[18px] rounded-[16px] text-white text-[14px] tracking-[4px] uppercase border-none cursor-pointer bg-linear-to-br ${tier.bgGradientTop} font-outfit ${isSelected ? 'opacity-70' : ''}`} 
+                    onClick={(e) => {
+                      handleChoosePlayer(e)
+                  }}
+                  disabled={isSelected}
+                >
+                  {isSelected ? "Selected" : "Choose Player"}
+                </button>
+              )}
 
-              <p className="text-center text-[8px] mt-4 font-bold text-white/20 tracking-widest uppercase">
+              {view === "selected" && (
+                <button className={`btn bg-red-500 mt-auto w-full p-[18px] rounded-[16px] text-white text-[14px] 
+                  tracking-[4px] uppercase border-none cursor-pointer font-outfit`} 
+                  onClick={(e) => {
+                    handleRemove(e)
+                }}
+              >
+               {isRemoved ? "Removed" : "Remove"}
+              </button>
+              )}
+
+              <p className="text-center text-[10px] mt-4 font-bold text-white/20 tracking-widest uppercase">
                 Click to flip back
               </p>
             </div>
@@ -216,7 +249,7 @@ const PlayerCard = ({ player = defaultPlayer, setCoin, coin }) => {
       </div>
 
       {/*/////======== alert modal ========\\\\\\\*/}
-      <dialog id={`modal_${player.playerName.replace(/\s+/g, '_')}`} className="modal">
+      <dialog id={`modal_${player.playerName.replaceAll(" ", "_")}`} className="modal">
         <div className="modal-box bg-slate-900/10 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl h-[200px] text-center w-[1000px]">
           <h3 className="font-black text-3xl text-red-500 font-outfit tracking-wide">Insufficient Funds</h3>
           <p className="py-4 text-white font-outfit text-xl font-semibold">Fill your pockets with more Coins to recruit
