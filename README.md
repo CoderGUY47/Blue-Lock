@@ -22,6 +22,7 @@
 
 - [✨ Overview](#-overview)
 - [❌ The Problem & ✅ The Solution](#-the-problem---the-solution)
+- [🚀 Live Link](#-live-link)
 - [💡 Business Value & Game Design](#-business-value--game-design)
 - [🚀 Key Features](#-key-features)
 - [📦 Tech Stack & Architecture](#-tech-stack--architecture)
@@ -51,6 +52,29 @@ Named after the elite Japanese football selection program concept, this app brin
 | Flat player cards with no visual personality | Rich **DaisyUI player cards** with position badges and stat highlights |
 | No analytics on selected team composition | **Recharts** pie and bar charts showing role distribution and budget allocation |
 | Toast spam from repeated duplicate player warnings | Single **react-toastify** pop with duplicate guard check logic |
+
+---
+
+## 🚀 Live Link
+
+→ [View Blue Lock Live Demo](https://blue-lock-bpl.vercel.app/)
+
+<br/>
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="https://images.unsplash.com/photo-1540747913346-19212a4b423d?q=80&w=880&h=495&auto=format&fit=crop" alt="Blue Lock Player Selection" width="100%" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" />
+    </td>
+    <td width="50%">
+      <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=880&h=495&auto=format&fit=crop" alt="Blue Lock Analytics" width="100%" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><sub>🏘 BPL Fantasy Player Selection Grid</sub></td>
+    <td align="center"><sub>💰 Live Budget Tracker & Team Analytics</sub></td>
+  </tr>
+</table>
 
 ---
 
