@@ -1,18 +1,18 @@
 <div align="center">
 
-# 🔵 Blue Lock
+# 🔵 Blue Lock — BPL Fantasy Cricket
 
-### Premium BPL Fantasy Cricket Team Builder Platform
+### Premium Fantasy Cricket Team Builder & Budget Management Platform
 
-*Bridging cinematic sports aesthetics with conversion-optimised fantasy cricket management and player analytics.*
+*A high-fidelity interactive fantasy cricket team selection experience — build your dream BPL squad, manage your coin budget, and track your picks with real-time stats.*
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-blue--lock--bpl.vercel.app-3b82f6?style=for-the-badge)](https://blue-lock-bpl.vercel.app/)
 &nbsp;
-[![React 19](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![React 19](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 &nbsp;
-[![Vite 8](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
+[![Vite 8](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
 &nbsp;
-[![TailwindCSS](https://img.shields.io/badge/Tailwind-v4-06b6d4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind-v4.2-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
 </div>
 
@@ -21,11 +21,11 @@
 ## 📖 Table of Contents
 
 - [✨ Overview](#-overview)
-- [🚀 Live Link](#-live-link)
 - [❌ The Problem & ✅ The Solution](#-the-problem---the-solution)
-- [💡 Business Value & SEO](#-business-value--seo)
+- [💡 Business Value & Game Design](#-business-value--game-design)
 - [🚀 Key Features](#-key-features)
 - [📦 Tech Stack & Architecture](#-tech-stack--architecture)
+- [📂 Project Structure](#-project-structure)
 - [🛠️ Installation & Setup](#️-installation--setup)
 - [🚢 Production Deployment](#-production-deployment)
 - [🤝 Social & Contributing](#-social--contributing)
@@ -34,94 +34,71 @@
 
 ## ✨ Overview
 
-**Blue Lock** is a high-performance BPL Fantasy Cricket Team Builder — a premium sports management platform where fans craft their dream cricket teams from real BPL player data. Built with **React 19**, **Vite 8**, and **Tailwind CSS v4**, the platform delivers a cinematic, data-rich sports experience complete with player statistics, budget management, real-time team composition, and paginated player catalogs.
+**Blue Lock** is an interactive BPL Fantasy Cricket Team Builder where fans craft their dream 11-player squads within a strict coin budget system. Built on **Vite 8** and **React 19** with **Tailwind CSS v4** and **DaisyUI v5**, the platform displays paginated player catalogs, enforces budget constraints with live balance tracking, and visualizes team composition through **Recharts** analytics panels.
 
-Inspired by the *Blue Lock* concept of elite player selection, the platform puts strategic team-building first — users manage a virtual coin budget to recruit and release players, track their selected squad in a live panel, and visualize team balance through **Recharts analytics**. With **React Paginate** handling large player rosters and **DaisyUI** modals for detailed player cards, Blue Lock is the definitive fantasy cricket companion.
+Named after the elite Japanese football selection program concept, this app brings that same intensity to cricket fan engagement.
 
 ---
 
 ## ❌ The Problem & ✅ The Solution
 
-> **Fantasy cricket apps are cluttered, slow, and lack strategic depth.**
-
-Most BPL fantasy tools overload users with noise, offer no budget tension, and provide no analytics to guide decision-making.
+> **Fantasy cricket fans need a fast, fun, and beautifully designed team selection experience.**
 
 | ❌ The Problem | ✅ Blue Lock's Solution |
 | ------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| Endless unorganized player lists with no pagination | **React Paginate** — clean, browsable player pages with smooth navigation |
-| No strategic constraint driving selection decisions | **Virtual coin budget system** — every pick costs coins, forcing smart choices |
-| No feedback when selecting or releasing players | **React Toastify** alerts for every add/remove action with contextual messages |
-| Raw stats tables with no visual representation | **Recharts analytics panel** visualizing team balance and player performance |
-| No detailed player preview before committing a pick | **DaisyUI modals** — full player card with stats on demand before selecting |
-| Broken mobile experiences ruining gameplay on small screens | Fully responsive layout — **Navbar and grid resize seamlessly** for all devices |
+| No visual feedback when budget is exceeded | Live **coin balance counter** updating instantly on every player selection |
+| Player lists with hundreds of entries are impossible to scan | **react-paginate** chunking player catalog into manageable page views |
+| Flat player cards with no visual personality | Rich **DaisyUI player cards** with position badges and stat highlights |
+| No analytics on selected team composition | **Recharts** pie and bar charts showing role distribution and budget allocation |
+| Toast spam from repeated duplicate player warnings | Single **react-toastify** pop with duplicate guard check logic |
 
 ---
 
-## 🚀 Live Link
-
-**→ [View Blue Lock Live Demo](https://blue-lock-bpl.vercel.app/)**
-
-<br/>
-
-<table>
-  <tr>
-    <td width="50%">
-      <img src="https://images.unsplash.com/photo-1540747913346-19212a4c89a3?q=80&w=880&h=495&auto=format&fit=crop" alt="Blue Lock Player Selection" width="100%" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" />
-    </td>
-    <td width="50%">
-      <img src="https://images.unsplash.com/photo-1593766788306-28561086694e?q=80&w=880&h=495&auto=format&fit=crop" alt="Blue Lock Team Analytics" width="100%" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><sub>🏏 Premium BPL Player Discovery & Selection</sub></td>
-    <td align="center"><sub>📊 Team Balance & Performance Analytics</sub></td>
-  </tr>
-</table>
-
----
-
-## 💡 Business Value & SEO
+## 💡 Business Value & Game Design
 
 | Feature | Impact |
 | --------------------------------- | ------------------------------------------------------------------------------- |
-| **Budget Constraint System** | Creates strategic tension that drives repeat engagement and session depth |
-| **Recharts Analytics** | Visual team stats turn passive browsing into active decision-making |
-| **Paginated Player Catalog** | Clean UX prevents scroll fatigue for large BPL rosters |
-| **Modal Player Preview** | Informed picking reduces buyer's remorse and improves team satisfaction |
+| **Budget Constraint System** | Adds strategic depth — forces users to make trade-off decisions between stars |
+| **Paginated Player Catalog** | Improves performance with large player datasets, keeping UI snappy |
+| **Recharts Team Analytics** | Visual feedback transforms raw selection data into useful strategy insights |
 
 ---
 
 ## 🚀 Key Features
 
-- **🏏 Full BPL Player Catalog** — Browse all available BPL players with rich metadata: name, role, country, price, and performance stats.
-- **💰 Coin Budget Management** — Start with a virtual coin balance; each player pick deducts their price — strategic selection is mandatory.
-- **📄 Paginated Player List** — React Paginate handles large rosters with smooth, accessible pagination controls.
-- **🔍 Player Detail Modal** — DaisyUI-powered modal shows full player card before committing to a selection.
-- **📊 Team Analytics Panel** — Recharts visualizations show selected squad composition and balance metrics.
-- **🔔 Real-Time Toast Notifications** — Instant feedback for add, remove, and budget-exceeded events via React Toastify.
-- **📱 Mobile-Responsive Layout** — Navbar and all grids are fully responsive across mobile, tablet, and desktop.
+- **🏏 Player Selection Grid** — Browse paginated BPL player cards with position, price, and rating.
+- **💰 Live Budget Tracker** — Real-time coin balance that prevents over-budget team selections.
+- **📊 Team Analytics Dashboard** — Recharts charts showing selected team composition and budget split.
+- **📄 Pagination System** — react-paginate navigating large player catalogs without lag.
+- **🔔 Toast Alerts** — react-toastify notifications for duplicate selections and budget overflow.
 
 ---
 
 ## 📦 Tech Stack & Architecture
 
-### Core Production Dependencies
-
 | Layer | Technology |
 | -------------------------- | ----------------------------------------------------- |
-| **Framework** | `react@^19.2.4` & `react-dom@^19.2.4` |
-| **Build Tool** | `vite@^8.0.1` with `@vitejs/plugin-react@^6.0.1` |
+| **Framework** | `react@^19.2.4` |
+| **Build Tool** | `vite@^8.0.1` |
+| **Styling** | `tailwindcss@^4.2.2` + `daisyui@^5.5.19` |
+| **Charts** | `recharts@^3.8.1` |
 | **Pagination** | `react-paginate@^8.3.0` |
-| **Analytics** | `recharts@^3.8.1` |
 | **Notifications** | `react-toastify@^11.0.5` |
 | **Icons** | `lucide-react@^1.3.0` |
 
-### Styling & UI Layers
+---
 
-| Layer | Technology |
-| --------------------- | --------------------------------------------------------- |
-| **Foundation** | `tailwindcss@^4.2.2` with `@tailwindcss/vite@^4.2.2` |
-| **Component Library** | `daisyui@^5.5.19` (Modal, Badge, Button) |
+## 📂 Project Structure
+
+```text
+Blue-Lock/
+├── src/
+│   ├── components/     # PlayerCard, BudgetBar, TeamPanel, Charts
+│   ├── data/           # BPL player JSON dataset
+│   └── App.jsx
+├── index.html
+└── vite.config.js
+```
 
 ---
 
@@ -135,29 +112,19 @@ Most BPL fantasy tools overload users with noise, offer no budget tension, and p
    npm install
    ```
 
-2. **Develop Locally**
+2. **Run Locally**
 
    ```bash
    npm run dev
-   ```
-
-   Access at `http://localhost:5173`.
-
-3. **Production Build**
-
-   ```bash
-   npm run build
    ```
 
 ---
 
 ## 🚢 Production Deployment
 
-Blue Lock is pre-configured for **Vercel** deployment.
-
-- **Build Command:** `npm run build` (runs `vite build`)
-- **Output Directory:** `dist`
-- **Framework Preset:** Vite (auto-detected by Vercel)
+- **Hosting:** Deployed on **Vercel** via automatic Git integration.
+- **Build Command:** `npm run build`
+- **Output Directory:** `dist/`
 
 ---
 
@@ -166,8 +133,6 @@ Blue Lock is pre-configured for **Vercel** deployment.
 <div align="center">
 
 Produced with precision by **[CoderGUY47](https://github.com/CoderGUY47)**.
-
-*Join us in engineering the ultimate fantasy cricket experience!*
 
 [![GitHub](https://img.shields.io/badge/GitHub-CoderGUY47-181717?style=for-the-badge&logo=github)](https://github.com/CoderGUY47)
 
